@@ -1,0 +1,30 @@
+body{
+  font-family : 'Roboto Mono', monospace;
+  text-align : center;
+  background-image : url(https://i.pinimg.com/originals/b2/4f/9e/b24f9eb20a09c351a09a85100fabc834.jpg);
+    background-color: white;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  
+}
+
+#titulo{
+  color : black;
+}
+
+section{
+  background-color : white;
+  margin : auto;
+  padding : 15px;
+  width : 500px;
+  border-radius : 10px;
+  box-shadow : 3px 3px 10px black;
+}
+
+#adc{
+  border-radius : 8px;
+  box-shadow : 3px 3px 3px black;
+  font-size : 15px;
+  background-color : orange;
+}
