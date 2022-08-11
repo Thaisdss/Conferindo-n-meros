@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Conferindo números</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conferindo Números</title>
   <link rel="stylesheet" href="./style.css">
-
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
-<body>
 <!-- partial:index.partial.html -->
-<body>
- <header>
-  <h1 id='titulo'> 
-  Confira os números
-  </h1>
- </header>
-<section> 
-<div id='div'>
-Adicione um valor : <input type='number' name='valor' id='valor'> 
-<input type='button' value='Adicionar' id='adc' onclick='Adicionar()'>
-  <p id='num'> Números adicionados : </p>
-</div>
-  </section>
-  <br>
-  <section>
-    <div id='res'></div>
-    <div id='primos'></div>
-    <div id='pn'></div>
-  </section>
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <body>
+  <header>
+    <h1>Confira os números</h1>
+  </header>
+  <main>
+    <section id="adicionar"> 
+      <label for="number">Adicione um valor:</label>
+      <input type='number' name='valor' id='valor'>
+      <button id="adc" onclick="Adicionar()">Adicionar</button>
+      <div>
+        <p id='num'>Números adicionados:</p>
+      </div>
+    </section>
 
-</body>
+    <section>
+      <div id='res'> 
+        <p>Adicione um valor para podermos fazer a sua conferência!</p>
+      </div>
+      <div id='primos'></div>
+      <div id='pn'></div>
+    </section>
+  </main>
+  <!-- partial -->
+    <script  src="./script.js"></script>
+
+  </body>
 </html>

@@ -6,25 +6,35 @@ body{
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-  
-}
-
-#titulo{
-  color : black;
+    background-attachment: fixed;
 }
 
 section{
   background-color : white;
-  margin : auto;
-  padding : 15px;
-  width : 500px;
+  margin: 20px auto;
+  max-width: 900px;
+  min-height: 200px;
+  padding: 15px;
   border-radius : 10px;
   box-shadow : 3px 3px 10px black;
 }
 
+/*Botão Adicionar*/
 #adc{
-  border-radius : 8px;
-  box-shadow : 3px 3px 3px black;
-  font-size : 15px;
   background-color : orange;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size : 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius : 8px;
+  border-color: wheat;
+  box-shadow : 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#adc:hover{
+  background-color: orangered;
+  cursor: pointer;
+  transition: 0.1s;
 }

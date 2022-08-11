@@ -5,16 +5,26 @@ var num = document.getElementById('num')
 var PN = document.getElementById('pn')
 var valores = []
 
+console.log(valor.value)
+
 function Adicionar() {
-  valores.push(parseInt(valor.value))
-  for(pos in valores) {
-   var numero =  valores[pos] 
+  if(valor.value == ""){
+    alert("Por favor digite um número para adicioná-lo")
+  }else{
+    valores.push(parseInt(valor.value))
+    for(pos in valores) {
+     var numero =  valores[pos] 
+    }
+
+    num.innerHTML += numero + '; '
+
+    somar(valores)
+    maior_menor(valores)
+    primo(valores)
+    pn(valores)
+
+    valor.value = ""
   }
-  num.innerHTML += numero + '; '
-  somar(valores)
-  maior_menor(valores)
-  primo(valores)
-  pn(valores)
 }
 
 function somar(valores) {
